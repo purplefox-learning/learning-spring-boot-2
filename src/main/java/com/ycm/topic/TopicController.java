@@ -21,8 +21,8 @@ public class TopicController {
         return topicService.getTopic(id);
     }
 
-    //@RequestBody take the http payload of the incoming request, which is a rest data
-    //and convert it to a topic object
+    //@RequestBody take the http payload (rest data) of the incoming request
+    //then convert it to a topic object
     @RequestMapping(method=RequestMethod.POST, value="/topics")
     public void addTopic(@RequestBody Topic topic) {
         topicService.addTopic(topic);
