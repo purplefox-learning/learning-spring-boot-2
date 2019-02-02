@@ -14,7 +14,7 @@ public interface CourseRepository extends CrudRepository<Course,String> {
     //the class type of the id of the object is String
     //therefore we declare it as CrudRepository<Course,String>
 
-    //one additional custom query at the course level: find coursee for a topic
+    //one additional custom query at the course level: find a course by a topic
     public List<Course> findByTopicId(String topicId);
     public List<Course> findByDescription(String desc);
 
