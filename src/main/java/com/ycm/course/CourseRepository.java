@@ -23,4 +23,6 @@ public interface CourseRepository extends CrudRepository<Course,String> {
     //e.g. to find by topic id
     //findByName - JPA will know we want to search by property 'name'
     //findByObjProperty - JPA know we want to search by Object's Property
+
+    //for more info on Repository, see learning-spring-boot-mvc-and-jpa
 }

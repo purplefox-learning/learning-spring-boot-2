@@ -4,11 +4,8 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface TopicRepository extends CrudRepository<Topic,String> {
 
-    //the following standard methods come with CrudRepository in Spring JPA:
-    //findAll, findById, existsById, save, saveAll, delete, deleteAll, deleteById
+    //Repository is a key concept in spring-data
 
-    //in our case,
-    //the class type of the object is Topic
-    //the class type of the id of the object is String
-    //therefore we declare it as CrudRepository<Topic,String>
+    //to learn more on Spring-Data-JPA or other Spring-Data-Xxx libraries,
+    //see project learning-spring-boot-mvc-and-jpa for references
 }
